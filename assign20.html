@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assign 20 Async/Await</title>
+  </head>
+  <body>
+    <p> que 9 remain</p>
+    <script>
+      "use strict";
+      // 1.async/await give clean code for promise.
+
+      // 2.  promise chains we can achieve with asyn await
+
+      // 3.
+       // eg.  1 - network calling
+
+      // 4. ans  is 3
+
+      // 5. ans
+      /* 1
+              Error: some error */
+
+      // 6. ans
+      /*    3
+                  2
+                  1
+                  Go!  */
+
+      // 7. ans giving error
+
+      // 8. yes .
+
+      async function a() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("resolved a");
+          }, 2000);
+        });
+      }
+
+      async function asyncCall() {
+        console.log("calling");
+        const result = await a();
+        console.log(result);
+      }
+
+      asyncCall();
+
+      // 9.  wait for it to finish task  so there will be no more deadlock.
+
+      // 10. asynchronous code are used when code wait for response. except this you can use synchronous code.
+
+    </script>
+  </body>
+</html>
